@@ -1,0 +1,631 @@
+<html>
+	
+	<head>
+		
+		<!-- link to the CSS part of the page-->
+		<link rel="stylesheet" href="theme.css">
+		<title>Top 3's</title>
+		
+	</head>
+	
+	<body>
+	
+	
+	<!-- Container to store all elements of the page-->
+	<div id="container">
+	
+		<!-- Division for the logo-->
+		<div id="logo">
+				
+			<img src="general pictures/logo.png" >
+				
+		</div>
+	
+		<!-- Navigation -->
+		<div id="nav">
+			<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="top 3.html">Top 3's Each Weight</a></li>
+			<li><a href="Past fights.html">Fights of the Decade</a></li>
+			<li><a href="Forum.html">Forum</a></li>
+			<li><a href="mayweather.html">Mayweather Moments</a></li>
+			<li><a href="login.html">Logout</a></li>
+		</div>
+		
+		
+		<!-- Main contents of the page-->
+		<div id="main">
+		
+			<p>On this page you view the top 3 boxers in the world for each weight class</p>
+		
+			<!-- Division for the top 3 fighters of each weight-->
+			<div id="weights">
+			
+				Select a weight: <select id="top 3">
+				
+					<option value="all">All Weights</option>
+					<option value="minimum">Minimum</option>
+					<option value="lightfly">Light Fly</option>
+					<option value="fly">Fly</option>
+					<option value="superfly">Super Flyweight</option>
+					<option value="bantam">Bantamweight</option>
+					<option value="superbantam">Super Bantamweight</option>
+					<option value="feather">Featherweight</option>
+					<option value="superfeather">Super Featherweight</option>
+					<option value="light">Lightweight</option>
+					<option value="superlight">Super Lightweight</option>
+					<option value="welter">Welterweight</option>
+					<option value="superwelter">Super Welterweight</option>
+					<option value="middle">Middleweight</option>
+					<option value="supermiddle">Super Middleweight</option>
+					<option value="lightheavy">Light Heavyweight</option>
+					<option value="cruiser">Cruiserweight</option>
+					<option value="heavy">Heavyweight</option>
+					</select>
+					
+					<button onclick="weights()" >Load Fighters </button>
+				
+					<br><br>
+					
+					<div id="prints">
+					
+					<!-- Divisions to store each of the three fighters for each weight in a line-->
+					<div id="section" >
+						<p> Minimumweights </p>
+						<p id="minimums" style="opacity:1;"> 
+							<a href="https://boxrec.com/en/proboxer/383177"><img src="top 3/moonsri.jpg" alt="Chayaphon Moonsri" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/617144"><img src="top 3/thammanoon.jpg" alt="Thammanoon Niyomtrong" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/431648"><img src="top 3/konkco.jpg" alt="Simpiwe Konkco" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+					
+					<div id="section">
+						<p> Light Flyweights </p>
+						<p id="light flyweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/692967"><img src="top 3/shiro.jpg" alt="Ken Shiro" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/752878"><img src="top 3/kyoguchi.jpg" alt="Hiroto Kyogunchi" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/778096"><img src="top 3/soto.jpg" alt="Elwin Soto" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+						<p> Flyweights </p>
+						<p id="flyweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/666339"><img src="top 3/tanaka.jpg" alt="Kosei Tanaka" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/705606"><img src="top 3/edwards.jpg" alt="Charlie Edwards" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/751478"><img src="top 3/aguilar.png" alt="Julio Cesar Martinez Aguilar" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">	
+						<p> Super Flyweights </p>
+						<p id="super flyweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/467843"><img src="top 3/estrada.jpg" alt="Juan Francisco Estrada" height="30%" width="26%"id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/528191"><img src="top 3/wangek.jpg" alt="Wisaksil Wangek" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/483786"><img src="top 3/ioka.jpg" alt="Kazuto Ioka" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+					<p> Bantamweights </p>
+						<p id="bantamweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/628407"><img src="top 3/inoue.jpg" alt="Naoya Inoue" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/611983"><img src="top 3/nery.jpg" alt="Luis Nery" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/680900"><img src="top 3/oubaali.jpg" alt="Nordine Oubaali" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+						<p> Super Bantamweights </p>
+						<p id="super bantamweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/602423"><img src="top 3/navarette.jpeg" alt="Emanuel Navarrete" height="30%" width="26%"id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/542148"><img src="top 3/vargas.jpg" alt="Rey Vargas" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/549073"><img src="top 3/roman.jpg" alt="Daniel Roman" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+						<p> Featherweights </p>
+						<p id="featherweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/374624"><img src="top 3/santacruz.jpg" alt="Leo Santa Cruz" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/479775"><img src="top 3/russelljr.jpg" alt="Gary Russell Jr" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/512777"><img src="top 3/warrington.jpg" alt="Josh Warrington" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+						<p> Super Featherweights </p>
+						<p id="super featherweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/553222"><img src="top 3/berchelt.jpg" alt="Miguel Berchelt" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/740705"><img src="top 3/rakhimov.jpg" alt="Shavkatdzhon Rakhimov" height="30%" width="26%"id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/367450"><img src="top 3/cancio.jpg" alt="Andrew Cancio" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+						<p> Lightweights </p>
+						<p id="lightweights" style="opacity:1;">
+							<a hreef="https://boxrec.com/en/proboxer/659771"><img src="top 3/lomachenko.jpg" alt="Vasyl Lomachenko" height="30%" width="26%"id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/563751"><img src="top 3/commey.jpg" alt="Richard Commey" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/741718"><img src="top 3/haney.jpg" alt="Devin Haney" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+					<p> Super Lightweights </p>
+						<p id="super lightweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/725709"><img src="top 3/taylor.jpg" alt="Josh Taylor" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/632104"><img src="top 3/ramirez.jpg" alt="Jose Carlos Ramirez" height="30%" width="26%"id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/611370"><img src="top 3/prograis.jpg" alt="Regis Prograis" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+						<p> Welterweights </p>
+						<p id="welterweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/447121"><img src="top 3/crawford.jpg" alt="Terrance Crawford" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/629465"><img src="top 3/spencejr.jpg" alt="Errol Spence Jr" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/6129"><img src="top 3/pacquiao.jpeg" alt="Manny Pacquiao" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+					
+					<div id="section">	
+						<p> Super Welterweights </p>
+						<p id="super welterweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/659924"><img src="top 3/munguia.jpg" alt="Jaime Munguia" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/457231"><img src="top 3/lara.jpg" alt="Erislandy Lara" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/536011"><img src="top 3/williams.jpg" alt="Jullian Williams" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+						<p> Middleweights </p>
+						<p id="middleweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/356831"><img src="top 3/golovkin.jpg" alt="Gennady Golovkin" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/432984"><img src="top 3/jacobs.jpeg" alt="Daniel Jacobs" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/471634"><img src="top 3/charlo.jpg" alt="Jermall Charlo" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+					
+					<div id="section">	
+						<p> Super Middleweights </p>
+						<p id="super middleweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/631178"><img src="top 3/smith.jpg" alt="Callum Smith" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/588468"><img src="top 3/eubankjr.jpg" alt="Chris Eubank Jr" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/482499"><img src="top 3/saunders.jpg" alt="Billy Joe Saunders" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+					
+					<div id="section">	
+						<p> Light Heavyweights </p>
+						<p id="light heavyweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/348759"><img src="top 3/canelo.jpg" alt="Saul Canelo Alvarez" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/703924"><img src="top 3/bivol.jpg" alt="Dimitry Bivol" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/505927"><img src="top 3/kovalev.jpg" alt="Sergey Kovalev" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+					
+					<div id="section">	
+						<p> Cruiserweights </p>
+						<p id="cruiserweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/514537"><img src="top 3/briedis.jpg" alt="Mairis Briedis" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/507154"><img src="top 3/dorticos.jpg" alt="Yuniel Dorticos" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/587030"><img src="top 3/lerena.jpg" alt="Kevin Lerena" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+					
+					<br>
+						
+					<div id="section">
+						<p> Heavyweights </p>
+						<p id="heavyweights" style="opacity:1;">
+							<a href="https://boxrec.com/en/proboxer/489762"><img src="top 3/ruizjr.png" alt="Andy Ruiz Jr" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/468841"><img src="top 3/wilder.jpg" alt="Deontay Wilder" height="30%" width="26%" id="boxer"></a>
+							<a href="https://boxrec.com/en/proboxer/659461"><img src="top 3/joshua.jpg" alt="Anthony Joshua" height="30%" width="26%" id="boxer"></a>
+						</p>
+					</div>
+						
+					</div>
+				
+			</div>
+			
+		</div>
+	
+	</div>
+	
+	
+	<!-- Javascript-->
+	<script>
+	
+	
+	<!-- function to show only the weight the user has selected-->
+	function weights(){
+		
+		var weight=document.getElementById("top 3").value; 
+		
+		if (weight=="all"){
+			document.getElementById("minimums").style.opacity=1;
+			document.getElementById("light flyweights").style.opacity=1;
+			document.getElementById("flyweights").style.opacity=1;
+			document.getElementById("super flyweights").style.opacity=1;
+			document.getElementById("bantamweights").style.opacity=1;
+			document.getElementById("super bantamweights").style.opacity=1;
+			document.getElementById("featherweights").style.opacity=1;
+			document.getElementById("super featherweights").style.opacity=1;
+			document.getElementById("lightweights").style.opacity=1;
+			document.getElementById("super lightweights").style.opacity=1;
+			document.getElementById("welterweights").style.opacity=1;
+			document.getElementById("super welterweights").style.opacity=1;
+			document.getElementById("middleweights").style.opacity=1;
+			document.getElementById("super middleweights").style.opacity=1;
+			document.getElementById("light heavyweights").style.opacity=1;
+			document.getElementById("cruiserweights").style.opacity=1;
+			document.getElementById("heavyweights").style.opacity=1;
+			
+		}else if (weight=="minimum"){
+			document.getElementById("minimums").style.opacity=1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+			
+		
+		}else if (weight=="lightfly"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		
+			}else if (weight=="fly"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		
+		
+		}else if (weight=="superfly"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="bantam"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		
+		}else if (weight=="superbantam"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="feather"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="superfeather"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="light"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="superlight"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="welter"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="superwelter"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="middle"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="supermiddle"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="lightheavy"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="cruiser"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=1;
+			document.getElementById("heavyweights").style.opacity=0.1;
+		
+		}else if (weight=="heavy"){
+			document.getElementById("minimums").style.opacity=0.1;
+			document.getElementById("light flyweights").style.opacity=0.1;
+			document.getElementById("flyweights").style.opacity=0.1;
+			document.getElementById("super flyweights").style.opacity=0.1;
+			document.getElementById("bantamweights").style.opacity=0.1;
+			document.getElementById("super bantamweights").style.opacity=0.1;
+			document.getElementById("featherweights").style.opacity=0.1;
+			document.getElementById("super featherweights").style.opacity=0.1;
+			document.getElementById("lightweights").style.opacity=0.1;
+			document.getElementById("super lightweights").style.opacity=0.1;
+			document.getElementById("welterweights").style.opacity=0.1;
+			document.getElementById("super welterweights").style.opacity=0.1;
+			document.getElementById("middleweights").style.opacity=0.1;
+			document.getElementById("super middleweights").style.opacity=0.1;
+			document.getElementById("light heavyweights").style.opacity=0.1;
+			document.getElementById("cruiserweights").style.opacity=0.1;
+			document.getElementById("heavyweights").style.opacity=1;
+		
+		}
+		
+	}
+	
+	</script>
+	
+	</body>
+
+</html>

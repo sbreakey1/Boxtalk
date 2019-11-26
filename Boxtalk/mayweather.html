@@ -1,0 +1,195 @@
+<html>
+
+	<head>
+	
+		<!-- link to the CSS stylesheet -->
+		<link rel="stylesheet" href="theme.css">
+		<title>Mayweather Moments</title>
+	
+	</head>
+	
+	<body>
+	
+	<!-- Container to store all elements of the page-->
+	<div id="container">
+	
+		<!-- Division for the logo-->
+		<div id="logo">
+				
+			<img src="general pictures/logo.png" >
+				
+		</div>
+		
+		
+	
+		<!-- Navigation -->
+		<div id="nav">
+			<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="top 3.html">Top 3's Each Weight</a></li>
+			<li><a href="Past fights.html">Fights of the Decade</a></li>
+			<li><a href="Forum.html">Forum</a></li>
+			<li><a href="mayweather.html">Mayweather Moments</a></li>
+			<li><a href="login.html">Logout</a></li>
+			</ul>
+		</div>
+		
+		
+		<!-- Main contents of the page-->
+		<div id="main">
+		
+			<p>Here are some of Floyd Mayweather Jr's greatest performances as a boxer</p>
+		
+			<br>
+		
+		
+			<!-- Sections to store images and text-->
+			<div id="section">
+		
+				
+				<p> Floyd Mayweather vs Arturo Gatti </p>
+				</br>
+				
+				<img src="boxers/mayweather.jpg" height="30%" width="30%" id="boxer">
+				<img src="general pictures/versus.png" height="20%" width="20%">
+				<img src="boxers/gatti_mayweather.jpg" height="30%" width="30%" id="boxer">
+				
+				<br><br>
+				<div id="showtext">
+				<button onclick="showGatti()"> Show info </button>
+				<button onclick="hideGatti()">Hide Info </button>
+					<p id="mayweatherGatti"> </p>
+				</div>
+				
+				<br>
+				<embed height="40%" width="60%" src="https://www.youtube.com/embed/orYBdp5ljS0">
+				
+				<br><br>
+				
+			</div>
+			
+			<br><br>
+			
+			<div id="section">
+			
+				
+				<p> Floyd Mayweather vs Shane Mosley </p>
+				<br>
+				
+				<img src="boxers/mayweather.jpg" height="30%" width="30%" id="boxer">
+				<img src="general pictures/versus.png" height="20%" width="20%">
+				<img src="boxers/mosley_mayweather.jpg" height="30%" width="30%" id="boxer">
+				
+
+				
+				<br><br>
+				<div id="showtext">
+				<button onclick="showMosley()"> Show info </button>
+				<button onclick="hideMosley()">Hide Info </button>
+				<p id="mayweatherMosley"> </p>
+				</div>
+				<br>
+					<embed height="40%" width="60%" src="https://www.youtube.com/embed/iK-obp_enCo">
+					
+					<br><br>
+			</div>
+			
+			<br><br>
+			
+			<div id="section">
+			
+			
+			<p> Floyd Mayweather vs Saul 'Canelo' Alvarez </p>
+			<br>
+		
+				<img src="boxers/mayweather.jpg" height="30%" width="30%" id="boxer">
+				<img src="general pictures/versus.png" height="20%" width="20%">
+				<img src="boxers/canelo_mayweather.jpg" height="30%" width="30%" id="boxer">
+				
+				<br><br>
+				
+				<div id="showtext">
+				<button onclick="showCanelo()"> Show info </button>
+				<button onclick="hideCanelo()">Hide Info </button>
+					<p id="mayweatherCanelo"> </p>
+				</div>
+				<br>
+				<embed height="40%" width="60%" src="https://www.youtube.com/embed/hws-4eDDchw">
+				
+				<br><br>
+				
+			</div>
+			
+			<br><br>
+			
+			<div id="section">
+			
+			
+			<p> Floyd Mayweather vs Diego Corrales </p>
+			<br>
+		
+				<img src="boxers/mayweather.jpg" height="30%" width="30%" id="boxer">
+				<img src="general pictures/versus.png" height="20%" width="20%">
+				<img src="boxers/corrales_mayweather.jpg" height="30%" width="30%" id="boxer"> 
+				
+				<br><br>
+				
+				<div id="showtext">
+				<button onclick="showCorrales()"> Show info </button>
+				<button onclick="hideCorrales()">Hide Info </button>
+					<p id="mayweatherCorrales"> </p>
+				</div>
+				<br>
+				<embed height="40%" width="60%" src="https://www.youtube.com/embed/XiTKAX9LQfg">
+				
+				<br><br>
+				
+			</div>
+			
+		</div>
+	
+	</div>
+	
+	
+	<!-- Javascript-->
+	<script>
+	
+	
+	<!-- functions to show and hide text -->
+	function showGatti(){
+		document.getElementById("mayweatherGatti").innerHTML="Floyd Mayweather vs Arturo Gatti took place on the 25th of June 2005, in New Jersey. Floyd controlled the first six rounds of the fight easily, much faster and stronger than Gatti. Gatti's corner threw in the towel after the sixth round, earning Mayweather the technical knockout victory.";
+	}
+	
+	function hideGatti(){
+		document.getElementById("mayweatherGatti").innerHTML="";
+	}
+	
+	function showMosley(){
+		document.getElementById("mayweatherMosley").innerHTML="Floyd Mayweather vs Shane Mosley happened on the 1st of May 2010. Mosley started strong, winning the first two rounds, landing a hard right hand in the second round that stunned Mayweather. After this, Mayweather took charge of the fight, and as Mosley tired Mayweather became stronger and more clinical punching landed him the unanimous decision victory.";
+	}
+	
+	function hideMosley(){
+		document.getElementById("mayweatherMosley").innerHTML="";
+	}
+	
+	function showCanelo(){
+		document.getElementById("mayweatherCanelo").innerHTML="Floyd Mayweather vs Saul 'Canelo' Alvarez took place on the 14th of September 2013. The fight saw Mayweather controlling the pace, and slick headmovement and clinical punches whilst maintaining a defensive nature saw Mayweather seal a majority decision victory.";
+	}
+	
+	function hideCanelo(){
+		document.getElementById("mayweatherCanelo").innerHTML="";
+	}
+	
+	function showCorrales(){
+		document.getElementById("mayweatherCorrales").innerHTML="Floyd Mayweather vs Diego Corrales took place on the 20th of January 2001. The fight saw Mayweather knock Corrales down five times, with Corrales' corner throwing in the towel, and Mayweather earning the TKO victory";
+	}
+	
+	function hideCorrales(){
+		document.getElementById("mayweatherCorrales").innerHTML="";
+	}
+	
+	</script>
+	
+	</body>
+
+</html>

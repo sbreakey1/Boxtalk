@@ -1,0 +1,98 @@
+<html>
+
+	<head>
+	
+		<!-- link to the CSS stylesheet-->
+		<link rel="stylesheet" href="theme.css">
+		<title> Register </title>
+		
+	</head>
+	
+	<body>
+	
+	<!-- Container to store all elements of the page-->
+	<div id="container">
+	
+		<!-- Division to store the logo-->
+		<div id="logo">
+			<img src="general pictures/logo.png">
+		</div>
+		
+		<!-- Navigation bar-->
+		<div id="nav">
+			<ul>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="register.html">Register</a></li>
+			</ul>
+		</div>
+		
+		<!-- Main content of the page-->
+		<div id="main">	
+		
+			<p>Enter your details to register for the website</p>
+	
+			<br><br>
+		
+			<!-- Division for the registering -->
+			<div id="login">
+	
+				Username: <input type="text" id="username">
+	
+				<br><br>
+	
+				Password: <input type="password" id="password">
+	
+				<br><br>
+	
+				Age range: <select id="ages">
+					<option value="none">None Selected</option>
+					<option value="16-10">16-20</option>
+					<option value="20-30">20-30</option>
+					<option value="30-50">30-50</option>
+					<option value="50+">50+</option>
+					</select>
+				
+					<br><br>
+				
+			</div>
+	
+			<button onclick="submit()"> Enter </button>
+			
+			<p id="error"> </p> 
+		
+		</div>
+		
+	</div>
+	
+	<!-- Javascript-->
+	<script>
+	
+	<!-- Function to validate the registration inputs -->
+	function submit(){
+	
+		var name=document.getElementById("username").value;
+		var pass=document.getElementById("password").value;
+		var age=document.getElementById("ages").value;
+		
+		if(name==""){
+			document.getElementById("error").innerHTML="Username cannot be empty";
+		}else if(pass==""){
+			document.getElementById("error").innerHTML="Password cannot be empty";
+		}
+		else if(age=="none"){
+			document.getElementById("error").innerHTML="You must enter an age field";
+		}
+		else{
+			document.getElementById("error").style.color="green";
+			document.getElementById("error").innerHTML="Welcome to the website";
+			window.location.href="home.html";
+		}
+		
+	
+	}
+	
+	</script>
+	
+	</body>
+
+</html>

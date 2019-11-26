@@ -1,0 +1,96 @@
+
+/*style the container*/
+#container{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+
+/*style the whole navigation bar*/
+#nav{
+	float:left;
+	width:30%;
+	background-color:lightgray;
+	height:100%;
+}
+
+
+/*style the list part of the navigation bar*/
+#nav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+/*style each element of the list*/
+li a{ 
+	text-decoration:none;
+	display:block;
+	padding:20px;
+	font-size:25px;
+	font-family:georgia;
+	color:black;
+	border: 1px solid;
+}
+
+/*hovering over an item in the list*/
+li a:hover{
+	background-color:gray;
+}
+
+/*style the main contents of the website*/
+#main{
+	float:right;
+	width:70%;
+	background-color: #F5DEB3;
+	height:100%;
+	overflow:auto;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+/*style the logo*/
+#logo{
+	background-color:black;
+	text-align:center;
+}
+
+/*style the login text*/
+#login{
+	font-size: 20px;
+}
+
+/*style the output text*/
+#output{
+	font-size:15px;  
+}
+
+/*style each section of images and text together*/
+#section{
+	border: 2px solid;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 25px;
+}
+
+
+/*style the show/hide text boxes*/
+#showtext{
+	border: 1px solid;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*style the error messages for the program*/
+#error{
+		color:red;
+}
+
+/*style the boxer images to be round*/
+#boxer{
+	border-radius: 20%;
+}

@@ -1,0 +1,86 @@
+<html>
+
+	<head>
+	
+		<!-- link to the CSS stylesheet-->
+		<link rel="stylesheet" href="theme.css">
+		<title>Forum</title>
+		
+	</head>
+	
+	<body>
+	
+	<!-- Container to store all elements of the page-->
+	<div id="container">
+	
+		<!-- Division for the logo-->
+		<div id="logo">
+				
+			<img src="general pictures/logo.png" >
+				
+		</div>
+		
+		
+		<!-- Navigation -->
+		<div id="nav">
+			<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="top 3.html">Top 3's Each Weight</a></li>
+			<li><a href="Past fights.html">Fights of the Decade</a></li>
+			<li><a href="Forum.html">Forum</a></li>
+			<li><a href="mayweather.html">Mayweather Moments</a></li>
+			<li><a href="login.html">Logout</a></li> 
+			</ul>
+		</div>
+		
+		
+		<!-- Main contents of the page-->
+		<div id="main">
+		
+			<p>Please feel free to write something to the forum</p>
+		
+			<div id="error">
+				<p id="print"> </p>
+			</div>
+		
+			<br><br>
+			<input type="text" id="userinput"> </input>
+			<button onclick="forumPost()" >Forum Post </button>
+			
+			<br><br>
+			<p> Post of the day: </p>
+		
+			<div id="section">
+				<p id="print2" > </p>
+			</div>
+		
+		</div>
+	
+	</div>
+	
+	<!-- Javascript-->
+	<script>
+	
+		<!-- function to post to the forum-->
+		function forumPost(){
+		
+			var input = document.getElementById("userinput").value;
+			
+			if(input==""){
+				document.getElementById("print").style.color="red";
+				document.getElementById("print").innerHTML="Forum Posts cannot be empty";
+			}else if(input==document.getElementById("print2").innerHTML)
+			{
+				document.getElementById("print").style.color="red";
+				document.getElementById("print").innerHTML="Forum posts cannot be the same";
+			}else{
+			document.getElementById("print").style.color="green";
+				document.getElementById("print").innerHTML="Successful post";
+				document.getElementById("print2").innerHTML=input;
+			}
+		}
+	</script>
+	
+	</body>
+
+</html>

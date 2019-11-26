@@ -1,0 +1,174 @@
+<html>
+
+	<head>
+	
+		<!-- link to the CSS stylesheet-->
+		<link rel="stylesheet" href="theme.css">
+		<title>Fights of the Decade</title>
+		
+	</head>
+	
+	<body>
+	
+	<!-- Container to store all elements of the page-->
+	<div id="container">
+	
+
+		<!-- Division for the logo-->
+		<div id="logo">
+				
+			<img src="general pictures/logo.png">
+				
+		</div>
+		
+		
+		<!-- Navigation-->
+		<div id="nav">
+			<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="top 3.html">Top 3's Each Weight</a></li>
+			<li><a href="Past fights.html">Fights of the Decade</a></li>
+			<li><a href="Forum.html">Forum</a></li>
+			<li><a href="mayweather.html">Mayweather Moments</a></li>
+			<li><a href="login.html">Logout</a></li>
+			</ul>
+		</div>
+		
+		
+		<!-- Main contents of the page-->
+		<div id="main">
+		
+			<p>Here are the best fights of the decades</p>
+		
+			<!-- Sections to store images and text-->
+			<div id="section">
+			<p> 2010s </p>
+			<p> Tyson Fury vs Wladimir Klitschko </p>
+				<img src="boxers/fury.jpg" alt="Tyson Fury" height="30%" width="30%" id="boxer">
+				<img src="general pictures/versus.png" >
+				<img src="boxers/klitschko.jpg" alt="Wladimir Klitschko" height="30%" width="30%" id="boxer">
+				<br><br>
+				
+				<div id="showtext">
+				<button onclick="FuryKlitschkoShow()">Show Text</button>
+				<button onclick="FuryKlitschkoHide()">Hide Text</button>
+				<p id="FK"> </p>
+				</div>
+				<br>
+				
+				<embed height="40%" width="60%"src="https://www.youtube.com/embed/tUD2tGd8RKw">
+				<br><br>
+			</div>
+			
+			<br><br>
+			
+			
+			
+			<div id="section">
+				<p> 2000s </p>
+				<p> Micky Ward vs Arturo Gatti </p>
+				<img src="boxers/ward.jpg" alt="Micky Ward" height="30%" width="30%" id="boxer">
+				<img src="general pictures/versus.png">
+				<img src="boxers/gatti.jpg" alt="Arturo Gatti" height="30%" width="30%" id="boxer">
+				<br><br>
+				
+				<div id="showtext">
+				<button onclick="WardGattiShow()">Show Text</button>
+				<button onclick="WardGattiHide()">Hide Text</button>
+				<p id="WG"> </p>
+				</div>
+				<br>
+				
+				<embed height="40%" width="60%" src="https://www.youtube.com/embed/hYkt9mdE5KQ">
+				<br><br>
+			</div>
+			
+			<br><br>
+			
+			
+			
+			<div id="section">
+				<p> 1990s </p>
+				<p> Mike Tyson vs Buster Douglas </p>
+				<img src="boxers/tyson.png" alt="Mike Tyson" height="30%" width="30%" id="boxer">
+				<img src="general pictures/versus.png">
+				<img src="boxers/douglas.jpg" alt="Buster Douglas" height="30%" width="30%" id="boxer">
+				<br><br>
+				
+				<div id="showtext">
+				<button onclick="TysonDouglasShow()">Show Text</button>
+				<button onclick="TysonDouglasHide()">Hide Text</button>
+				<p id="TD"> </p>
+				</div>
+				<br>
+				
+				<embed height="40%" width="60%" src="https://www.youtube.com/embed/gi9Ufhe0Uf0">
+				<br><br>
+			</div>
+			
+			<br><br>
+			
+			
+			
+			<div id="section">
+			<p> 1980s </p>
+			<p> Marvin Hagler vs Sugar Ray Leonard </p>
+				<img src="boxers/hagler.jpg" alt="Marvin Hagler" height="30%" width="30%" id="boxer">
+				<img src="general pictures/versus.png">
+				<img src="boxers/leonard.jpg" alt="Sugar Ray Leonard" height="30%" width="30%" id="boxer">
+				<br><br>
+				
+				<div id="showtext">
+				<button onclick="HaglerLeonardShow()">Show Text</button>
+				<button onclick="HaglerLeonardHide()">Hide Text</button> 
+				<p id="HL"> </p>
+				</div>
+				<br>
+				
+				<embed height="40%" width="60%" src="https://www.youtube.com/embed/CeeRZ9kZgeU">
+				<br><br>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+
+	<!-- Javascript-->
+	<script>
+	
+	<!-- functions to show and hide text -->
+	function FuryKlitschkoShow(){
+		document.getElementById("FK").innerHTML="Tyson Fury vs Wladimir Klitschko happened on the 25th of November 2015. The fight was a chess game between the two men, with Fury edging the victory with the more clinical punches. Fury won the unanimous decision victory in Germany. ";
+	}
+	function FuryKlitschkoHide(){
+		document.getElementById("FK").innerHTML="";
+	}
+	
+	function WardGattiShow(){
+		document.getElementById("WG").innerHTML="Arturo Gatti vs Micky Ward took place on the 18th of November 2002. The fight was a 10 round war, with both fighters leaving everything in the ring, and is considered one of, if not the, greatest fights of all time. The knockdown of Gatti in the ninth round proved to be the difference in the fight, as Micky Ward earned the majority decision victory.";
+	}	
+	function WardGattiHide(){
+		document.getElementById("WG").innerHTML="";
+	}
+	
+	function TysonDouglasShow(){
+		document.getElementById("TD").innerHTML="Mike Tyson vs Buster Douglas took place on the 11th of February 1990 in Tokyo, Japan. Douglas was a heavy underdog coming into the fight, and with the recent death of his mother during his training camp, many overlooked him as being able to cope with Tyson. Buster Douglas knocked out Mike Tyson in the tenth round of the fight, making it one of the biggest upsets in boxing history.";
+	}
+	
+	function TysonDouglasHide(){
+		document.getElementById("TD").innerHTML="";
+	}
+	
+	function HaglerLeonardShow(){
+		document.getElementById("HL").innerHTML="Sugar Ray Leonard vs Marvin Hagler was a boxing match that took place on the 6th of April 1987. Sugar Ray Leonard had only fought once in the last five years going into the fight, with Hagler as the champion. The fight went the distance with both fighters exhanging heavy blows. The fight was very close and there is controversy to the decision, a split decision victory for Leonard. ";
+	}
+	
+	function HaglerLeonardHide(){
+		document.getElementById("HL").innerHTML="";
+	}
+	</script>
+	
+	</body>
+
+</html>

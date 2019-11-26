@@ -1,0 +1,98 @@
+<html>
+
+
+	<head>
+	
+		<!-- link to the CSS stylesheet-->
+		<link rel="stylesheet" href="theme.css">
+		<title>Login</title>
+		
+	</head>
+	
+	<body>
+	
+		<!-- Container to hold all elements of the page-->
+		<div id="container" >
+		
+			<!-- Division for the logo-->
+			<div id="logo">
+			
+				<img src="general pictures/logo.png">
+				
+			</div>
+			
+			<!-- Navigation bar-->
+			<div id="nav">
+				<ul>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>
+				</ul>
+			</div>
+			
+			<!-- Main content-->
+			<div id="main">
+	
+				<h2>Welcome to the website</h2>
+	
+				<h3>Please log in to access the full functionality</h3>
+				
+			
+	
+				<br>
+				
+				<!-- Division for login part of the page-->
+				<div id="login">
+	
+					Username: <input type="text" id="username">
+		
+					<br><br>
+		
+					Password: <input type="password" id="password">
+		
+					<br><br>
+			
+			
+				
+					<p id="error"> </p>
+			
+					<br><br>
+			
+			
+		
+					<button onclick="login()"> Enter </button>
+		
+				</div>
+		
+			<br><br>
+		
+			New user? Please register to access the website <a href="register.html" > here </a>
+			
+			</div> 
+		
+		</div>
+		
+		
+		<!-- Javascript-->
+		<script>
+			
+			<!-- Validation for the login inputs-->
+			function login(){
+			
+			var name=document.getElementById("username").value;
+			var pass=document.getElementById("password").value;
+			
+			if(name=="steven" && pass=="password"){
+				document.getElementById("error").style.color="green";
+				document.getElementById("error").innerHTML="Successful Login";
+				window.location.href="home.html";
+			}else{
+				document.getElementById("error").innerHTML="Unsuccessful Login";
+			}
+			
+			}
+			
+		</script>
+	
+	</body>
+
+</html>
